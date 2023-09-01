@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+/* body{
+  background: #00003B;
+} */
+
+
+body {
+  --background-start-color: #311D3F; /* RGB for dark blue */
+  --background-end-color: #E23E57; /* RGB for red */
+
+  color: white; /* Text color */
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--background-end-color)
+    )
+    var(--background-start-color);
+}
+
+.nav-with-blur {
+  background-color: rgba(49, 29, 63, 0.5); /* Adjust the alpha value to control transparency */
+  backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+}
+
+.check {
+  background-color: #E23E57;
+}
+
