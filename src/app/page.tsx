@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Image from "next/image";
@@ -11,30 +11,30 @@ import { Fade } from "@/components/motion";
 export default function Home() {
   const [typedText, setTypedText] = useState("");
   const text = "Randy Verdian";
-  let index = 0;
-  let isDeleting = false;
+  const index = useRef(0);
+  const isDeleting = useRef(false);
 
   useEffect(() => {
     function type() {
-      if (isDeleting) {
-        setTypedText(text.slice(0, index));
-        index--;
+      if (isDeleting.current) {
+        setTypedText(text.slice(0, index.current));
+        index.current--;
 
-        if (index < 0) {
-          isDeleting = false;
-          index = 0;
+        if (index.current < 0) {
+          isDeleting.current = false;
+          index.current = 0;
         }
       } else {
-        setTypedText(text.slice(0, index));
-        index++;
+        setTypedText(text.slice(0, index.current));
+        index.current++;
 
-        if (index > text.length) {
-          isDeleting = true;
-          index = text.length;
+        if (index.current > text.length) {
+          isDeleting.current = true;
+          index.current = text.length;
         }
       }
 
-      setTimeout(type, isDeleting ? 100 : 200);
+      setTimeout(type, isDeleting.current ? 100 : 200);
     }
 
     type();
