@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { Fade } from "./motion";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,27 +38,27 @@ export default function Navbar() {
           >
             <ul className="space-y-2 text-[16px] text-white">
               <li>
-                <a href="/" className="m-4 block hover:text-[#F9ED69]">
+                <Link href="/" className="m-4 block hover:text-[#F9ED69]">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="https://drive.google.com/file/d/1xG3ltNKhS_lf3fnm6qGT4wssNtL39Zz5/view?usp=sharing"
                   className="m-4 block hover:text-[#F9ED69]"
                 >
                   Resume
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/projects" className="m-4 block hover:text-[#F9ED69]">
+                <Link href="/projects" className="m-4 block hover:text-[#F9ED69]">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blogs" className="m-4 block hover:text-[#F9ED69]">
+                <Link href="/blogs" className="m-4 block hover:text-[#F9ED69]">
                   Blogs
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -68,27 +67,27 @@ export default function Navbar() {
         <div>
           <ul className="hidden space-x-8 text-[20px] text-white md:flex">
             <li>
-              <a href="/" className="hover:text-[#F9ED69]">
+              <Link href="/" className="hover:text-[#F9ED69]">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://drive.google.com/file/d/1xG3ltNKhS_lf3fnm6qGT4wssNtL39Zz5/view?usp=sharing"
                 className="hover:text-[#F9ED69]"
               >
                 Resume
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/projects" className="hover:text-[#F9ED69]">
+              <Link href="/projects" className="hover:text-[#F9ED69]">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/blogs" className="hover:text-[#F9ED69]">
+              <Link href="/blogs" className="hover:text-[#F9ED69]">
                 Blogs
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

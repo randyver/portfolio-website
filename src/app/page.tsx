@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:h-full">
       <Navbar />
-      <section className="container mx-auto">
+      <section className="container overflow-hidden mx-auto">
         <div className="flex h-screen flex-col items-center md:h-full xl:mx-20 xl:mt-[-60px] xl:h-screen xl:flex-row">
           <motion.div
             className="mx-auto mt-20 w-[80%] overflow-hidden rounded-full border-4 border-[#F9ED69] md:w-[40%] xl:w-[30%]"
