@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className="nav-with-blur sticky top-0 h-16 w-full bg-transparent p-4">
-      <div className="mr-10 flex items-center justify-end">
+      <div className="flex items-center justify-end">
         <div className="md:hidden">
           <button className="text-white" onClick={toggleMenu}>
             <svg

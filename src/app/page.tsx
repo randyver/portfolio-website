@@ -138,7 +138,6 @@ export default function Home() {
                   <p className="text-black">Download CV</p>
                 </a>
               </div>
-              <div></div>
               <p className="mt-20 flex justify-end text-3xl font-semibold  xl:text-4xl">
                 Find Me On
               </p>
