@@ -143,7 +143,7 @@ export default function Home() {
                 Find Me On
               </p>
               <div className="mt-6 flex justify-end space-x-4">
-                <Link href="https://github.com/randyver">
+                <a href="https://github.com/randyver">
                   <Image
                     className="cursor-pointer transition duration-300 ease-in-out hover:scale-110"
                     src="/github(2).png"
@@ -151,8 +151,8 @@ export default function Home() {
                     height={40}
                     alt="GitHub"
                   />
-                </Link>
-                <Link href="http://randyverdian99@gmail.com/">
+                </a>
+                <a href="http://randyverdian99@gmail.com/">
                   <Image
                     className="cursor-pointer transition duration-300 ease-in-out hover:scale-110"
                     src="/email(1).png"
@@ -160,8 +160,8 @@ export default function Home() {
                     height={40}
                     alt="Email"
                   />
-                </Link>
-                <Link href="https://www.linkedin.com/in/randy-verdian">
+                </a>
+                <a href="https://www.linkedin.com/in/randy-verdian">
                   <Image
                     className="cursor-pointer transition duration-300 ease-in-out hover:scale-110"
                     src="/linkedin(1).png"
@@ -169,8 +169,8 @@ export default function Home() {
                     height={40}
                     alt="LinkedIn"
                   />
-                </Link>
-                <Link href="https://www.instagram.com/randyverdian_/">
+                </a>
+                <a href="https://www.instagram.com/randyverdian_/">
                   <Image
                     className="cursor-pointer transition duration-300 ease-in-out hover:scale-110"
                     src="/instagram(1).png"
@@ -178,7 +178,7 @@ export default function Home() {
                     height={40}
                     alt="Instagram"
                   />
-                </Link>
+                </a>
               </div>
             </Fade>
           </div>

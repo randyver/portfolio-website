@@ -8,12 +8,12 @@ export default function Blogs() {
   return (
     <main>
       <Navbar />
-      <div className="mx-6 h-screen md:mx-20 md:h-full xl:mx-20 xl:h-screen">
-        <h1 className="mt-20 text-center text-3xl font-semibold xl:text-4xl">
+      <div className="mx-6 my-10 h-screen md:mx-20 md:h-full xl:mx-20 xl:h-screen">
+        <h1 className="text-center text-3xl font-semibold xl:text-4xl">
           Read <span className="text-[#F9ED69]">My Blogs</span>
         </h1>
 
-        <div className="mt-8 flex flex-col-reverse justify-center space-y-8 xl:flex-row-reverse xl:space-x-8 xl:space-y-0">
+        <div className="mt-6 flex flex-col-reverse justify-center space-y-8 xl:flex-row-reverse xl:space-x-8 xl:space-y-0">
           {/* Post 1 */}
           <BlogBox
             linkTo="/blogs/blog-1"
