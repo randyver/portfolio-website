@@ -14,7 +14,7 @@ export function Blog({ title, date, children }: BlogProps) {
     <div>
       <Navbar />
       <div className="my-[60px] flex items-center justify-center">
-        <div className="min-h-screen space-y-6 rounded-lg w-[calc(100%-2rem)] md:w-[calc(100%-6rem)] bg-white p-6 md:p-10 text-justify text-[10px] md:text-[16px] text-black">
+        <div className="min-h-screen space-y-6 rounded-lg w-[calc(100%-2rem)] md:w-[calc(100%-6rem)] bg-white p-6 md:p-10 text-justify text-[12px] md:text-[16px] text-black">
           <p className="text-left text-[20px] md:text-[30px] font-bold">{title}</p>
           <p className="text-left text-[12px] md:text-[16px] italic text-gray-600">{date}</p>
           {children}
